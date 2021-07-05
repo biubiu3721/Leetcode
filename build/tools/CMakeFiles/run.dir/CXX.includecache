@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/study/CS/cpp/Leetcode/src/tasks/binary_tree/binary_tree.h
+iostream
+-
+cstring
+-
+cassert
+-
+vector
+-
+
+C:/study/CS/cpp/Leetcode/src/tasks/task.h
+./binary_tree/binary_tree.h
+C:/study/CS/cpp/Leetcode/src/tasks/binary_tree/binary_tree.h
+
+C:/study/CS/cpp/Leetcode/tools/test.cpp
+../src/tasks/task.h
+C:/study/CS/cpp/Leetcode/src/tasks/task.h
+

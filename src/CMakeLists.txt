@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.15.0)
+set( CMAKE_CXX_FLAGS "-std=c++11" )
+set(LIBRARY_OUTPUT_PATH "${PROJECT_BINARY_DIR}/lib")
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/tasks/binary_tree bt_lib)
+include_directories("${PROJECT_SOURCE_DIR}/src")
+add_library(tasks SHARED ${bt_lib})
+add_library(tasks_static STATIC ${bt_lib})
+set_target_properties(tasks_static PROPERTIES OUTPUT_NAME "tasks")

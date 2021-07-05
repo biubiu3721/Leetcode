@@ -1,0 +1,2 @@
+C:\software\mingw64\bin\ar.exe qc ..\lib\libtasks.a  CMakeFiles/tasks_static.dir/tasks/binary_tree/binary_tree.cpp.obj
+C:\software\mingw64\bin\ranlib.exe ..\lib\libtasks.a

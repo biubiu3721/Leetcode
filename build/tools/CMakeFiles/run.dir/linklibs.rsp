@@ -1,0 +1,1 @@
+ -LC:/study/CS/cpp/Leetcode/build/lib -Wl,-Bstatic -ltasks -Wl,-Bdynamic -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

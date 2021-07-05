@@ -1,2 +1,2 @@
 # Leetcode
-leetcode practice based on c++ and python.
+leetcode practice based on c/c++.

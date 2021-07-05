@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.15.0)
+set( CMAKE_CXX_FLAGS "-std=c++11" )
+set(EXECUTABLE_OUTPUT_PATH "${PROJECT_BINARY_DIR}/bin")
+aux_source_directory(${PROJECT_SOURCE_DIR}/tools tools_src)
+include_directories("${PROJECT_SOURCE_DIR}/src")
+link_directories("${PROJECT_BINARY_DIR}/lib")
+add_executable(run ${tools_src})
+target_link_libraries(run libtasks.a)
