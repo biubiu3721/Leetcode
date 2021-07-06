@@ -51,19 +51,21 @@ void MidOrder(TreeNode * p_tree)
 {
     if(!p_tree)
     {
-        MidOrder(p_tree->p_left);
-        std::cout << p_tree->val << " -> ";
-        MidOrder(p_tree->p_right);
+        return;
     }
+    MidOrder(p_tree->p_left);
+    std::cout << p_tree->val << " -> ";
+    MidOrder(p_tree->p_right);
 }
 void PostOrder(TreeNode * p_tree)
 {
     if(!p_tree)
     {
-        PostOrder(p_tree->p_left);
-        PostOrder(p_tree->p_right);
-        std::cout << p_tree->val << " -> ";
+        return;
     }
+    PostOrder(p_tree->p_left);
+    PostOrder(p_tree->p_right);
+    std::cout << p_tree->val << " -> ";
 }
 void LevelOrderArr(TreeNode * p_tree)
 {
